@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.all{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #86ffff;
+    align-items: center;
+    justify-content: center;
+}
+
+.total {
+    width: 40%;
+    aspect-ratio: 1;
+    background: #47ffff;
+    box-shadow: 2px 2px 22px black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 32%;
+    width: 100%;
+}
+
+.col {
+    background-color: rgb(18, 105, 185);
+    width: 32%;
+    aspect-ratio: 1;    
+}
+
+.result {
+    font-size: 51px;
+    background: #15e5e5;
+    z-index: 29;
+    color: #000000;
+    border-radius: 8px;
+    width: 35%;
+    height: 40%;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.result div {
+    width: 70%;
+}
+
+.resMain{
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c2c2ff;
+    opacity: 0.95;
+}
+
+
+
+.btn {
+    box-shadow: 0px 0px 18px #4e4e4e;
+    background: rgb(233 249 255);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.players {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.p-input {
+    margin: 5px;
+    box-sizing: border-box;
+    width: 25%;
+    height: 25%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.p-input .btn{
+    width: 100%;
+    font-size: 55px;
+}
+
+.text-input{
+    font-size: 25px;
+    padding: 3%;
+    width: 100%;
+    border-style: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 9px black;
+}
+
+#currentPlayer {
+    visibility: hidden;
+    position: absolute;
+    top: 45%;
+    right: 1%;
+    box-shadow: 0px 0px 74px #303030;
+    padding: 10px;
+    border-radius: 10px;
+    width: 28%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#currentPlayer #name {
+    font-size: 41px;
+}
+
+#currentPlayer #color{
+    width: 20%;
+    color: black;
+    border-radius: 8px;
+}

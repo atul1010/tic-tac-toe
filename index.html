@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="all">
+        <div id="currentPlayer">
+            <span id="name"></span>
+            <div id="color"></div>
+        </div>
+        <div class="total">
+            <div class="row">
+                <div id="cell11" class="col"></div> 
+                <div id="cell12" class="col"></div> 
+                <div id="cell13" class="col"></div> 
+            </div>
+            <div class="row">
+                <div id="cell21" class="col"></div> 
+                <div id="cell22" class="col"></div> 
+                <div id="cell23" class="col"></div> 
+            </div>
+            <div class="row">
+                <div id="cell31" class="col"></div> 
+                <div id="cell32" class="col"></div> 
+                <div id="cell33" class="col"></div> 
+            </div>
+        </div>
+
+    </div>
+    <div class="resMain">
+        <div class="result">
+            <div id="winnerName"></div>
+            <div class="btn" id="playAgain">Play Again</div>
+        </div>
+    </div>
+
+    <div class="players">
+        <div class="p-input">
+            <div>
+                <input type="text" class="text-input" name="player1" id="player1" placeholder="Player 1 (Black)">
+            </div>
+            <div>
+                <input type="text" class="text-input" name="player2" id="player2" placeholder="Player 2 (White)">
+            </div>
+            <div class="btn" id="start">Start</div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
